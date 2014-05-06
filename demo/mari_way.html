@@ -11,23 +11,20 @@
                 background-image: url('http://localhost/jquery-back-to-top/demo/back2top.png');
                 background-repeat: no-repeat;
                 bottom: 20px;
-                color: #333;
                 cursor: pointer;
-                display: block;
                 height: 70px;
-                line-height: 20px;
                 position: fixed;
                 right: 20px;
-                text-indent: -9999px;
                 width: 70px;
                 z-index: 1;
+                display: none;
             }
         </style>
     </head>
     <body>
 
         <div id="random-txt"></div>
-        <div id="mari"></div>
+       <div id="mari"></div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script type="text/javascript" src="../jquery.b2t.js"></script>
@@ -35,7 +32,7 @@
             for (var i = 0; i < 100; i += 1) {
                 $('#random-txt').append('<p>Test</p>');
             }
-            $('#mari').backtotop();
+         $.fn.b2t();
         </script>
     </body>
 </html>
